@@ -2,4 +2,4 @@ FROM almalinux:9
 ENV trainer="Ramesh"\
     course="Dcoekr"\
     duration="3months"
-CMD ["sleep 100"]
+CMD ["sleep", "100"]
