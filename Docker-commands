@@ -1,0 +1,21 @@
+#Docker commands
+docker images --> list down the images
+docker pull <image-Name>:<image:version> --> to pull the images
+docker ps --> to check the running container
+docker create <image>:<tag> --> to create container
+docker ps --> it show running container
+docker ps -a --> all containers with any state
+docker start container ID --> to start the container
+docker stop container ID --> to stop the container
+docker rm container ID --> to delete container
+docker rm -f container ID --> to delete container forcefully 
+docker rm -f `docker ps -a -q` --> to delete all the containers
+docker rmi image ID --> to delete image 
+docker rmi `docker rmi -a -q` --> to delete all the images  
+docker run <image> --> to pull docker + to create container + to run container    
+docker run -d <image> --> to pull docker + to create container + to run container "-d to run in background"
+docker run -d -p <host-port>:<container:ID> <image>:<tag> --> to access the docker from the internet by enabling the host port and that can redirect trafiic to container
+docker inspect <container-ID>/<image-ID> --> to get the full info about it
+docker exec -it(interactive) <container-ID> bash --> to login to container terminal
+docker logs <container-ID> --> to check the container logs
+docker logs -f <container-ID> --> to tail the container logs
