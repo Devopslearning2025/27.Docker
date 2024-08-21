@@ -19,3 +19,5 @@ docker inspect <container-ID>/<image-ID> --> to get the full info about it
 docker exec -it(interactive) <container-ID> bash --> to login to container terminal
 docker logs <container-ID> --> to check the container logs
 docker logs -f <container-ID> --> to tail the container logs
+docker build -t <URL/username/image-name>:tag .  (-t = tag and . at the end represents the current directory where our dockerfile present)
+docker immages -f <label=key=value> --> to get the image based on the label
