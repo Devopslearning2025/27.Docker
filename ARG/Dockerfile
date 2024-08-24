@@ -4,6 +4,7 @@ FROM almalinux:${version:-9}
 #ARG TRAINER
 ARG course=Anshu
 ARG trainer=Swathi
-ENV DURATION=120hours
+ARG DURATION=120hours
+ENV duration=${DURATION}
 RUN echo "course is ${course}, and trainer is ${trainer}, duration is ${DURATION}"
 CMD ["sleep","100"]
