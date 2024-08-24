@@ -2,8 +2,8 @@ ARG version
 FROM almalinux:${version:-9}
 #ARG CORUSE
 #ARG TRAINER
-ARG CORUSE=Anshu
-ARG TRAINER=Swathi
+ARG course=Anshu
+ARG trainer=Swathi
 ENV DURATION=120hours
-RUN echo "course is ${CORUSE}, and trainer is ${TRAINER},duration is ${DURATION}"
+RUN echo "course is ${course}, and trainer is ${trainer}, duration is ${DURATION}"
 CMD ["sleep","100"]
