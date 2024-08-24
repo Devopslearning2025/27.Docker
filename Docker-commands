@@ -21,3 +21,4 @@ docker logs <container-ID> --> to check the container logs
 docker logs -f <container-ID> --> to tail the container logs
 docker build -t <URL/username/image-name>:tag .  (-t = tag and . at the end represents the current directory where our dockerfile present)
 docker immages -f <label=key=value> --> to get the image based on the label
+docker system prune -a --> Purging All Unused or Dangling Images, Containers, Volumes, and Networks
